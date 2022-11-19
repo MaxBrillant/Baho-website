@@ -1,0 +1,296 @@
+<!doctype html>
+<html land="en">
+<head>
+<title>css Template</title>
+<meta charset="viewport" content="width-device-width, initial-scale">
+</head>
+<body>
+
+<header>
+  <h2>Get in touch with our association</h2></header>
+
+   <ul class= "navigation">
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="About.html">About us</a></li>
+      <li><a href="Gallery.html">Gallery</a></li>
+      <li class="active">Contact us</a></li>
+      <li><a href="Location.html">Location</a></li>
+    </ul>
+   <div class= "description">
+     <h1>Contact our team</h1>
+     <p>
+      If you want to never miss any of our volunteering works and initiatives, make sure to connect with our team via our social media and email accounts.
+     </p>
+     </div>
+
+    <div class= "social">
+        <p><img src="Images/email1.png"/></p>
+        <div>
+        <p>If you want to directly get in touch with our team, please send us an email at our address</p>
+        <p><a href="About.html" class="goToPageButton">Send us an email</a></p>
+    </div>
+</div>
+
+<div class= "social">
+    <p><img src="Images/facebook.png"/></p>
+    <div>
+    <p>Make sure to like and follow our Facebook page to never miss any updates</p>
+    <p><a href="About.html" class="goToPageButton">Go to our page</a></p>
+</div>
+</div><div class= "social">
+    <p><img src="Images/twitter.png"/></p>
+    <div>
+    <p>Never miss news and updates by following us on our Twitter account</p>
+    <p><a href="About.html" class="goToPageButton">Go to our account</a></p>
+</div>
+</div><div class= "social">
+    <p><img src="Images/instagram.png"/></p>
+    <div>
+    <p>Follow our instagram page to see all photos and videos taken throughout our multiple and diverse activities</p>
+    <p><a href="About.html" class="goToPageButton">Go to our page</a></p>
+</div>
+</div><div class= "social">
+    <p><img src="Images/linkedin.png"/></p>
+    <div>
+    <p>Let's connect on LinkedIn!</p>
+    <p><a href="About.html" class="goToPageButton">Go to our page</a></p>
+</div>
+</div>
+
+    <div class= "social">
+        <p><img src="Images/whatsapp.png"/></p>
+        <div><p>You can contact us via Whatsapp and we will do our best to quckly respond to your message</p>
+        <p><a class="number">Chat with us at +254115898949</a></p>
+    </div>
+</div>
+     
+
+<footer>
+  <ul class= "footer-list">
+    <li><a href="Home.html">Home</a></li>
+    <li><a href="About.html">About us</a></li>
+    <li><a href="Gallery.html">Gallery</a></li>
+    <li><a href="Location.html">Location</a></li>
+  </ul>
+  <p class="company">Baho association, 2006-2022.</p>
+</footer>
+
+
+
+
+<style>
+  * { 
+     box-sizing: airtel, helvetica, sans-serif;
+     padding-bottom: 0px;
+     margin-bottom: 0px;
+  }
+  
+  
+  /* style the header */
+  header {
+       background-color: #666;
+       padding: 7%;
+       text-align: center;
+       font-size: 35px;
+       color: white;
+	background-image:linear-gradient(rgba(69, 69, 69, 0.5),rgba(69, 69, 69, 0.5)), url("Images/image2.jpg");
+background-size: cover;
+  }
+
+  body {
+    background-color: rgb(34, 69, 146);
+    margin: 0px;
+  }
+
+  p, h1, h2, li{
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+p {
+  font-size: 20px;
+  color: rgb(50, 50, 50);
+}
+  /* stylethe list inside the menu */
+  
+  .description, .social {
+    height: fit-content;
+        width: 90%;
+        background-color: #f3f3f3;
+        padding: 10px 10px 20px 20px;
+        margin-top: 40px;
+        margin-left: 3%;
+        margin-right: 3%;
+        border-radius: 20px;
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+        padding-right: 20px;
+        line-height: 30px;
+  }
+  /* clear floats after the columns */
+  sector :after{
+              content: "";
+              /*dispay: table;*/
+              clear: both;
+  }
+  .navigation {
+     margin-top: 0px;
+  }
+
+  .navigation li a
+{
+	font-family: Century Gothic;
+	font-size: 20px;
+	color: #fff;
+	width:150px;
+	border:1px solid transparent;
+	border-radius: 5px;
+	background-color:transparent;
+	text-decoration: none;
+padding: 5px 20px;
+transition: 0.6s ease;
+}
+.navigation li a:hover
+{
+	background-color: #fff;
+	color: black;
+	font-family: Century Gothic;
+
+}
+.active
+{
+	background-color: #fff;
+	color: black;
+	font-family: Century Gothic;
+	border:1px solid transparent;
+	border-radius: 5px;
+	text-decoration: none;
+	font-size:23px;
+padding: 5px 20px;
+transition: 0.6s ease;
+}
+.navigation 
+{
+  background-color: rgb(34, 69, 146);
+  width: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.navigation li
+{
+	display:inline-block;
+}
+
+.max {
+	display:block;
+  background-color: white;
+  width: 300px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  padding: 5px 5px 20px 5px;
+  border-radius: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 0px;
+  
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.social img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-left: 25px;
+  margin-right: 30px;
+}
+
+.social {
+  display: flex;
+  justify-content: left;
+}
+
+
+.goToPageButton {
+	font-family: Century Gothic;
+	font-size: 15px;
+	color: rgb(34, 69, 146);
+	border:3px solid rgb(34, 69, 146);
+	border-radius: 25px;
+	background-color:transparent;
+	text-decoration: none;
+padding: 7px 15px;
+font-weight: bold;
+transition: 0.6s ease;
+margin-left: 3px;
+}
+
+.number {
+	font-family: Century Gothic;
+    text-align: center;
+	font-size: 15px;
+	color: white;
+	border-radius: 3px;
+	background-color: rgb(38, 168, 77);
+	text-decoration: none;
+padding: 7px 7px;
+transition: 0.6s ease;
+}
+
+
+.goToPageButton:hover {
+	color: white;
+	background-color: rgb(34, 69, 146);
+}
+
+
+footer {
+  background-color: rgb(34, 69, 146);
+  padding-bottom: 0px;
+  box-shadow: white 0px -1px 0px 0px;
+  }
+
+.footer-list{
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  }
+
+  .footer-list li
+{
+	display: block;
+margin-top: 10px;
+}
+.footer-list li a {
+  font-size: 10px;
+	font-size: 20px;
+	color: #fff;
+	width:150px;
+	border:1px solid transparent;
+	border-radius: 5px;
+	background-color:transparent;
+	text-decoration: underline;
+padding: 5px 20px;
+transition: 0.6s ease;
+}
+
+.company {
+  color: white;
+  width: 300px;
+  font-size: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+}
+  
+  /* Responsive layout - makes the column/boxes stack on yhe top of each other instead of the next
+  to each other, on small screens */
+  @media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height:auto;
+    }
+  }
+  </style>
+
+</body>
+</html>
+

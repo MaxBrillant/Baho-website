@@ -1,0 +1,302 @@
+<!doctype html>
+<html land="en">
+<head>
+<title>css Template</title>
+<meta charset="viewport" content="width-device-width, initial-scale">
+</head>
+<body>
+
+<header>
+  <h2>Come pay us a visit</h2></header>
+
+   <ul class= "navigation">
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="About.html">About us</a></li>
+      <li><a href="Gallery.html">Gallery</a></li>
+      <li><a href="Contact.html">Contact us</a></li>
+      <li class="active">Location</li>
+    </ul>
+   <div class= "description">
+    <h1>Visit us at our offices</h1>
+     <p>Our offices are located at General Kago Road, Thika town, Kiambu County, Kenya.</p>
+     </div>
+
+  <div class= "location">
+    <h1>Google Maps location</h1>
+    <iframe class="locationImage" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.1549661884433!2d37.080175013734845!3d-1.0448159992378538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f4ef517d2dd15%3A0x8e7d07383daf5916!2sMount%20Kenya%20University!5e0!3m2!1sen!2ske!4v1668783697176!5m2!1sen!2ske" width="700" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class= "images">
+        <h1>Some images of our headquarters</h1>
+        <p class="imageBox"><img src="Images/mku1.png"/></p>
+        <p class="imageBox"><img src="Images/mku2.jpg"/></p>
+        <p class="imageBox"><img src="Images/mku3.jpg"/></p>
+          </div>
+        </div>
+
+<footer>
+  <ul class= "footer-list">
+    <li><a href="About.html">About us</a></li>
+    <li><a href="Gallery.html">Gallery</a></li>
+    <li><a href="Contact.html">Contact us</a></li>
+    <li><a href="#">Location</a></li>
+  </ul>
+  <p class="company">Baho association, 2006-2022.</p>
+</footer>
+
+
+
+
+<style>
+  * { 
+     box-sizing: airtel, helvetica, sans-serif;
+     padding-bottom: 0px;
+     margin-bottom: 0px;
+  }
+  
+  
+  /* style the header */
+  header {
+       background-color: #666;
+       padding: 7%;
+       text-align: center;
+       font-size: 35px;
+       color: white;
+	background-image:linear-gradient(rgba(69, 69, 69, 0.5),rgba(69, 69, 69, 0.5)), url("Images/image2.jpg");
+background-size: cover;
+  }
+
+  body {
+    background-color: rgb(34, 69, 146);
+    margin: 0px;
+  }
+
+  p, h1, h2, li{
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+p {
+  font-size: 20px;
+  color: rgb(50, 50, 50);
+}
+  /* stylethe list inside the menu */
+  
+  .description, .images, .location {
+    height: fit-content;
+        width: 90%;
+        background-color: #f3f3f3;
+        padding: 10px 10px 20px 20px;
+        margin-top: 40px;
+        margin-left: 3%;
+        margin-right: 3%;
+        border-radius: 20px;
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+        padding-right: 20px;
+        line-height: 30px;
+  }
+  /* clear floats after the columns */
+  sector :after{
+              content: "";
+              /*dispay: table;*/
+              clear: both;
+  }
+  .navigation {
+     margin-top: 0px;
+  }
+
+  .navigation li a
+{
+	font-family: Century Gothic;
+	font-size: 20px;
+	color: #fff;
+	width:150px;
+	border:1px solid transparent;
+	border-radius: 5px;
+	background-color:transparent;
+	text-decoration: none;
+padding: 5px 20px;
+transition: 0.6s ease;
+}
+.navigation li a:hover
+{
+	background-color: #fff;
+	color: black;
+	font-family: Century Gothic;
+
+}
+.active
+{
+	background-color: #fff;
+	color: black;
+	font-family: Century Gothic;
+	border:1px solid transparent;
+	border-radius: 5px;
+	text-decoration: none;
+	font-size:23px;
+padding: 5px 20px;
+transition: 0.6s ease;
+}
+.navigation 
+{
+  background-color: rgb(34, 69, 146);
+  width: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.navigation li
+{
+	display:inline-block;
+}
+
+.max {
+	display:block;
+  background-color: white;
+  width: 300px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  padding: 5px 5px 20px 5px;
+  border-radius: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 0px;
+  
+  margin-left: auto;
+  margin-right: auto;
+}
+.max p, .max h2{
+  margin: 0px;
+  padding-top: 5px;
+  text-align: center;
+  color: rgb(34, 69, 146);
+}
+
+@media (min-width: 800px) {
+
+  .max {
+  float: right;
+  }
+}
+.maxImage {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 30px;
+  margin-bottom: 0px;
+  margin-top: -5px;
+}
+
+.imageBox {
+	display:inline-block;
+  width: 300px;
+  height: 200px;
+  margin-right: 30px;
+  vertical-align: top;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  padding: 0px;
+  border-radius: 10px;
+
+}
+
+.imageBox img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.contactImage img{
+  display: block;
+  width: auto;
+  height: 150px;
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contactImage {
+  background-color: rgb(34, 69, 146);
+  padding-top: 20px;
+  border-radius: 15px;
+}
+
+.locationImage{
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+.goToPageButton {
+	font-family: Century Gothic;
+	font-size: 15px;
+	color: rgb(34, 69, 146);
+	border:3px solid rgb(34, 69, 146);
+	border-radius: 25px;
+	background-color:transparent;
+	text-decoration: none;
+padding: 7px 15px;
+font-weight: bold;
+transition: 0.6s ease;
+margin-left: 3px;
+}
+
+
+.goToPageButton:hover {
+	color: white;
+	background-color: rgb(34, 69, 146);
+}
+
+
+footer {
+  background-color: rgb(34, 69, 146);
+  padding-bottom: 0px;
+  box-shadow: white 0px -1px 0px 0px;
+  }
+
+.footer-list{
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  }
+
+  .footer-list li
+{
+	display: block;
+margin-top: 10px;
+}
+.footer-list li a {
+  font-size: 10px;
+	font-size: 20px;
+	color: #fff;
+	width:150px;
+	border:1px solid transparent;
+	border-radius: 5px;
+	background-color:transparent;
+	text-decoration: underline;
+padding: 5px 20px;
+transition: 0.6s ease;
+}
+
+.company {
+  color: white;
+  width: 300px;
+  font-size: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+}
+  
+  /* Responsive layout - makes the column/boxes stack on yhe top of each other instead of the next
+  to each other, on small screens */
+  @media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height:auto;
+    }
+  }
+  </style>
+
+
+</body>
+</html>
+
