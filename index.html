@@ -24,25 +24,25 @@
     </div>
     <h1>At Baho Association, we help people who have been affected by situations of crisis.</h1>
      <p>We help people who have been affected by wars, floods, famine, droughts, or anyone who faces any situation of vulnerability.</p>
-     <p>To learn more, go to <a href="about.html" class="goToPageButton">About us</a></p>
+     <p>To learn more, go to <button type="button"><a href="about.html" class="goToPageButton">About us</a></button></p>
      </div>
      
    <div class= "images">
     <h1>Here are some images of some of our work.</h1>
     <p class="imageBox"><img src="Images/image.jpg" alt="Our charity work in Rusizi" title="Rusizi charity"/><br>One of our volunteering works conducted in Rusizi district, in Rwanda.</br></p>
     <p class="imageBox"><img src="Images/image1.jpg" alt="Our charity work in Ngozi" title="One of our latest charity visits in South Kivu, DRC"/><br>Our latest visit in the South Kivu province, in DRC.</br></p>
-   <p>To see more images related to our work and our association, go to <a href="gallery.html" class="goToPageButton">Gallery</a></p>
+   <p>To see more images related to our work and our association, go to <button type="button"><a href="gallery.html" class="goToPageButton">Gallery</a></button></p>
   </div>
 
   <div class= "contact">
     <p class="contactImage"><img src="Images/contactImage.png"/></p>
-    <p>If you want to contact us or get in touch with our association, go to <a href="contact.html" class="goToPageButton">Contact us</a></p>
+    <p>If you want to contact us or get in touch with our association, go to <button type="button"> <a href="contact.html" class="goToPageButton">Contact us</a></button></p>
   </div>
 
   <div class= "location">
     <p class="locationImage"><img src="Images/location.jpg"/></p>
     <p>General Kago Road, Thika town, Kiambu County, Kenya.</p>
-     <p> <a href="location.html" class="goToPageButton">View on map</a></p>
+     <p> <button type="button"><a href="location.html" class="goToPageButton">View on map</a></button></p>
   </div>
 
 <footer>
@@ -65,6 +65,15 @@
      margin-bottom: 0rem;
   }
   
+  html, 
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
+
   :root {
     font-size: 62.5%;
   }
@@ -96,7 +105,7 @@ p {
   
   .description, .images, .contact, .location {
     height: fit-content;
-        width: 90%;
+        width: auto;
         background-color: #f3f3f3;
         padding: 1rem 2rem 2rem 2rem;
         margin-top: 4rem;
@@ -247,7 +256,9 @@ transition: 0.6s ease;
 padding: 0.7rem 1.5rem;
 font-weight: bold;
 transition: 0.6s ease;
-margin-left: 0.3rem;
+}
+button {
+  border: none;
 }
 
 
