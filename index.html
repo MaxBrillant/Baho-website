@@ -17,15 +17,9 @@
       <li><a href="location.html">Location</a></li>
     </ul>
    <div class= "description">
-    <div class="max">
-     <p><img class="maxImage" src="Images/max.jpg"/></p>
-       <h2>Max Brillant Ndashimye</h2>
-       <p>Founder of Baho Association</p>
-     </div>
     <h1>At Baho Association, we help people who have been affected by situations of crisis.</h1>
      <p>We help people who have been affected by wars, floods, famine, droughts, or anyone who faces any situation of vulnerability.</p>
      <p>To learn more, go to <button type="button"><a href="about.html" class="goToPageButton">About us</a></button></p>
-    
     </div>
      
 
@@ -48,6 +42,17 @@
   </div>
 
 <footer>
+  <!-- <div> -->
+    
+  <div class="max">
+    <p><img class="maxImage" src="Images/max.jpg"/></p>
+  <ul class= "max-social">
+    <li><a href="about.html"><img class="maxImage" src="Images/twitter.png" alt="Twitter" title="Twitter"/></a></li>
+    <li><a href="gallery.html"><img class="maxImage" src="Images/linkedin.png" alt="LinkedIn" title="LinkedIn"/></a></li>
+    <li><a href="gallery.html"><img class="maxImage" src="Images/github.png" alt="Github" title="Github"/></a></li>
+  </ul>
+  </div>
+
   <ul class= "footer-list">
     <li><a href="about.html">About us</a></li>
     <li><a href="gallery.html">Gallery</a></li>
@@ -55,6 +60,7 @@
     <li><a href="location.html">Location</a></li>
   </ul>
   <p class="company">Baho association, 2006-2022.</p>
+<!-- </div> -->
 </footer>
 
 
@@ -171,19 +177,18 @@ transition: 0.6s ease;
 .navigation li
 {
 	display: inline-block;
-  line-height: 40px;
+  line-height: 4rem;
 }
 
 .max {
-	display: block;
   background-color: white;
-  width: 30rem;
+  width: 15rem;
+  height: 18rem;
   box-shadow: rgba(14, 30, 37, 0.12) 0rem 0.2rem 0.4rem 0rem, rgba(14, 30, 37, 0.32) 0rem 0.2rem 1.6rem 0rem;
   padding: 0.5rem 0.5rem 2rem 0.5rem;
-  border-radius: 3rem;
-  margin-top: 1rem;
+  border-radius: 10rem 10rem 3rem 3rem;
+  margin-top: 3rem;
   margin-bottom: 1rem;
-  margin-right: 0rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -194,16 +199,42 @@ transition: 0.6s ease;
   color: rgb(34, 69, 146);
 }
 
-@media (min-width: 45rem) {
+.max-social{
+  margin-top: 0rem;
+  padding: 0rem;
+  text-align: center;
+}
+.max-social li {
+  display: inline-block;
+  vertical-align: middle;
+  width: fit-content;
+}
+.max-social li a img {
+  width: 3rem;
+  height: 3rem;
+  margin: 0.5rem;
+  object-fit: cover;
+  border-radius: 0rem;
+}
+.max-social li a img:hover {
+  width: 4rem;
+  height: 4rem;
+  margin: auto;
+  object-fit: cover;
+  border-radius: 0rem;
+}
+
+@media (min-width: 27rem) {
   .max {
   float: right;
+  margin-right: 30%;
   }
 }
 .maxImage {
-  width: 30rem;
-  height: 30rem;
+  width: 15rem;
+  height: 15rem;
   object-fit: cover;
-  border-radius: 3rem;
+  border-radius: 10rem;
   margin-bottom: 0rem;
   margin-top: -0.5rem;
 }
@@ -271,43 +302,43 @@ button {
 
 
 footer {
+  display: inline-block;
+  width: 100%;
   background-color: rgb(34, 69, 146);
   padding-bottom: 0rem;
   box-shadow: white 0rem -0.1rem 0rem 0rem;
+  vertical-align: top;
+  margin-top: 4rem;
   }
-
 .footer-list{
-  margin-top: 2rem;
   padding-top: 1rem;
-  padding-bottom: 5rem;
+  padding-bottom: 10rem;
+  width: fit-content;
   }
 
-  .footer-list li
+.footer-list li
 {
-	display: block;
+display: block;
 margin-top: 1rem;
 }
 .footer-list li a {
-  font-size: 1rem;
 	font-size: 2rem;
+  width: 100%;
 	color: #fff;
-	width:15rem;
+	/*width: 15rem;*/
 	border: 0.1rem solid transparent;
 	border-radius: 0.5rem;
 	background-color:transparent;
 	text-decoration: underline;
-padding: 0.5rem 2rem;
 transition: 0.6s ease;
 }
 
 .company {
   color: white;
-  width: 30rem;
+  width: 100%;
   font-size: 2rem;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
   padding-bottom: 2rem;
+  text-align: center;
 }
   
   /* Responsive layout - makes the column/boxes stack on yhe top of each other instead of the next
