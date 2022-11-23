@@ -166,6 +166,7 @@ transition: 0.6s ease;
     height: 40rem;
     object-fit: cover;
     border-radius: 1.5rem;
+    margin-top: 2rem;
    }
 
 .locationImage img{
